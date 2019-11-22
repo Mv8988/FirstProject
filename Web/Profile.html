@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>MyFrames</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="Profile.css">
+<script language="javascript">
+
+        function test()
+            {  
+            if (document.pic.src=='https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F988900144%2F960x0.jpg%3Ffit%3Dscale')
+            {
+            document.pic.src='http://www.machovibes.com/wp-content/uploads/2018/03/Feature-8.jpg';
+            document.pic2.src='https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F988900144%2F960x0.jpg%3Ffit%3Dscale';
+            document.pic3.src="https://images.wallpaperscraft.com/image/dog_bulldog_walk_thick_91738_1920x1080.jpg";
+            } 
+            else if (document.pic.src=='http://www.machovibes.com/wp-content/uploads/2018/03/Feature-8.jpg')
+            {
+            document.pic.src='https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F988900144%2F960x0.jpg%3Ffit%3Dscale'; 
+            document.pic2.src='http://www.machovibes.com/wp-content/uploads/2018/03/Feature-8.jpg';
+            document.pic3.src="https://images.wallpaperscraft.com/image/dog_bulldog_walk_thick_91738_1920x1080.jpg";
+            }
+            }
+
+        function test2()
+            {  
+            if (document.pic3.src=='https://images.wallpaperscraft.com/image/dog_bulldog_walk_thick_91738_1920x1080.jpg')
+            {
+            document.pic3.src='http://www.machovibes.com/wp-content/uploads/2018/03/Feature-8.jpg';
+            document.pic2.src='https://images.wallpaperscraft.com/image/dog_bulldog_walk_thick_91738_1920x1080.jpg';
+            document.pic.src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F988900144%2F960x0.jpg%3Ffit%3Dscale";
+
+            } 
+            else if (document.pic3.src=='http://www.machovibes.com/wp-content/uploads/2018/03/Feature-8.jpg')
+            {
+            document.pic3.src='https://images.wallpaperscraft.com/image/dog_bulldog_walk_thick_91738_1920x1080.jpg'; 
+            document.pic2.src='http://www.machovibes.com/wp-content/uploads/2018/03/Feature-8.jpg';
+            document.pic.src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F988900144%2F960x0.jpg%3Ffit%3Dscale";
+            }
+            }
+</script>
+</head>
+<body>
+<ul>
+  <center>
+        <li><a href="Main page.html">Main page</a></li>
+        <li><a href="Find.html">Find</a></li>
+        <li><a class="active" href="Profile.html">Profile</a></li>
+        <li><a href="ProData.xml">Profile Data</a></li>
+  </center>
+</ul>
+<center><img class="proImg" src="http://www.machovibes.com/wp-content/uploads/2018/03/Feature-8.jpg" width="400" height="380"></br>
+<h1 class="title">AChase98</h1><img class="GearImg" src="https://img.icons8.com/cotton/2x/settings.png" width="50" height="50"></br>
+
+<h3>Hey! Welcome to MyFrames page.</br>
+Please drop a like and follow!</h3>
+
+<div>
+    <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F988900144%2F960x0.jpg%3Ffit%3Dscale" name="pic" onclick="test()" width="250" height="100">
+    <img src="http://www.machovibes.com/wp-content/uploads/2018/03/Feature-8.jpg" name="pic2" width="450" height="300">
+    <img src="https://images.wallpaperscraft.com/image/dog_bulldog_walk_thick_91738_1920x1080.jpg" name="pic3" onclick="test2()" width="250" height="100"></br>
+</div>
+</center>
+</body>
+</html>

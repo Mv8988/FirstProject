@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ProfileData[
+<!ELEMENT ProfileData (Data, ProfileData, Permissions)>
+
+<!ELEMENT Data (Name, ProName, Password, City, PhoneNumber, Address, IdCode)>
+
+<!ELEMENT Permissions (Share, Save)>
+
+<!ELEMENT Share (ShareableContent, QuickShare)>
+
+<!ELEMENT Save (SaveableContent, QuickSave)>
+
+<!ELEMENT Name (#PCDATA)>
+
+<!ELEMENT ProName (#PCDATA)>
+
+<!ELEMENT Password (#PCDATA)>
+
+<!ELEMENT City (#PCDATA)>
+
+<!ELEMENT PhoneNumber (#PCDATA)>
+
+<!ELEMENT Address (#PCDATA)>
+
+<!ELEMENT IdCode (#PCDATA)>
+
+<!ELEMENT ShareableContent (#PCDATA)>
+
+<!ELEMENT Quickshare (#PCDATA)>
+
+<!ELEMENT SaveableContent (#PCDATA)>
+
+<!ELEMENT QuickSave (#PCDATA)>
+]>
+
+<ProfileData>
+<Data>
+<Name> Adam Chase </Name>
+<ProName> AChase98 </ProName>
+<Password>Chase9Adam8</Password>
+<City> New York </City>
+<PhoneNumber> 0503258556 </PhoneNumber>
+<Address> CentralBulevard 3 </Address>
+<IdCode> 335788 </IdCode>
+</Data>
+<Permissions>
+<Share>
+<ShareableContent> True </ShareableContent>
+<Quickshare> True </Quickshare>
+</Share>
+<Save>
+<SaveableContent> False </SaveableContent>
+<QuickSave> True </QuickSave>
+</Save>
+</Permissions>
+</ProfileData>

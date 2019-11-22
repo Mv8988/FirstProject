@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>MyFrames</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="ProfileP.css">
+<script language="javascript">
+        function changeImage() {
+        if (document.getElementById("imgChange").src == "https://icon-library.net/images/follow-icon-png/follow-icon-png-27.jpg") 
+            {document.getElementById("imgChange").src = "followed.png"}
+        else 
+            {document.getElementById("imgChange").src = "https://icon-library.net/images/follow-icon-png/follow-icon-png-27.jpg";}
+        }
+
+        function test()
+            {  
+            if (document.pic.src=='https://cdn1-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg')
+            {
+            document.pic.src='https://www.medicalnewstoday.com/content/images/articles/325/325984/person-taking-a-selfie.jpg';
+            document.pic2.src='https://cdn1-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg';
+            document.pic3.src="https://static01.nyt.com/images/2019/05/15/dining/09spritz1/merlin_141351063_e6829ad6-f61c-435a-b6c3-87526a0613ef-articleLarge.jpg?quality=75&auto=webp&disable=upscale";
+
+            } 
+            else if (document.pic.src=='https://www.medicalnewstoday.com/content/images/articles/325/325984/person-taking-a-selfie.jpg')
+            {
+            document.pic.src='https://cdn1-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg'; 
+            document.pic2.src='https://www.medicalnewstoday.com/content/images/articles/325/325984/person-taking-a-selfie.jpg';
+            document.pic3.src="https://static01.nyt.com/images/2019/05/15/dining/09spritz1/merlin_141351063_e6829ad6-f61c-435a-b6c3-87526a0613ef-articleLarge.jpg?quality=75&auto=webp&disable=upscale";
+            }
+            }
+
+        function test2()
+            {  
+            if (document.pic3.src=='https://static01.nyt.com/images/2019/05/15/dining/09spritz1/merlin_141351063_e6829ad6-f61c-435a-b6c3-87526a0613ef-articleLarge.jpg?quality=75&auto=webp&disable=upscale')
+            {
+            document.pic3.src='https://www.medicalnewstoday.com/content/images/articles/325/325984/person-taking-a-selfie.jpg';
+            document.pic2.src='https://static01.nyt.com/images/2019/05/15/dining/09spritz1/merlin_141351063_e6829ad6-f61c-435a-b6c3-87526a0613ef-articleLarge.jpg?quality=75&auto=webp&disable=upscale';
+            document.pic.src="https://cdn1-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg";
+
+            } 
+            else if (document.pic3.src=='https://www.medicalnewstoday.com/content/images/articles/325/325984/person-taking-a-selfie.jpg')
+            {
+            document.pic3.src='https://static01.nyt.com/images/2019/05/15/dining/09spritz1/merlin_141351063_e6829ad6-f61c-435a-b6c3-87526a0613ef-articleLarge.jpg?quality=75&auto=webp&disable=upscale'; 
+            document.pic2.src='https://www.medicalnewstoday.com/content/images/articles/325/325984/person-taking-a-selfie.jpg';
+            document.pic.src="https://cdn1-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg";
+            }
+            }
+</script>
+</head>
+<body>
+<ul>
+  <center>
+        <li><a href="Main page.html">Main page</a></li>
+        <li><a href="Find.html">Find</a></li>
+        <li><a href="Profile.html">Profile</a></li>
+        <li><a href="ProData.xml">Profile Data</a></li>
+  </center>
+</ul>
+<center class="fontStyle"><img class="proImg" src="https://www.medicalnewstoday.com/content/images/articles/325/325984/person-taking-a-selfie.jpg" width="400" height="380"></br>
+<img alt="" src="https://icon-library.net/images/follow-icon-png/follow-icon-png-27.jpg" style="height:100px; width:200px;" id="imgChange" onclick="changeImage()"/>
+<h1 class="title">CamillaBrownx</h1><img class="GearImg" src="https://img.icons8.com/cotton/2x/settings.png" width="50" height="50">
+(visiting)
+</br>
+<h3>Hey followers!</br>
+Nice that you found my page!</h3></center>
+
+<div>
+    <img src="https://cdn1-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg" name="pic" onclick="test()" width="250" height="100">
+    <img src="https://www.medicalnewstoday.com/content/images/articles/325/325984/person-taking-a-selfie.jpg" name="pic2" width="450" height="300">
+    <img src="https://static01.nyt.com/images/2019/05/15/dining/09spritz1/merlin_141351063_e6829ad6-f61c-435a-b6c3-87526a0613ef-articleLarge.jpg?quality=75&auto=webp&disable=upscale" name="pic3" onclick="test2()" width="250" height="100"></br>
+</div>
+</body>
+</html>
